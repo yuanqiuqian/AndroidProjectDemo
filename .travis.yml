@@ -1,2 +1,18 @@
 language: java
-gradle assemble
+
+jdk:
+  - oraclejdk8
+  - openjdk8
+  - openjdk11
+
+script:
+ - ./gradlew clean build
+
+branches:
+  except:
+    - master
+
+notifications:
+  email: false
+
+sudo: false
