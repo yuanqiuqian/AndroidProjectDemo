@@ -17,10 +17,10 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="130dp"
+        android:layout_height="89dp"
         android:text="Button"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="231dp" />
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="84dp" />
 
 </android.support.constraint.ConstraintLayout>
