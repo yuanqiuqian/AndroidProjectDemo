@@ -1,18 +1,9 @@
-language: java
-
-jdk:
-  - oraclejdk8
-  - openjdk8
-  - openjdk11
-
+language: android
+android:
+  components:
+    - build-tools-27.1.1
+    - android-27
+    - extra-android-m2repository
+    - extra-android-support
 script:
- - ./gradlew clean build
-
-branches:
-  except:
-    - master
-
-notifications:
-  email: false
-
-sudo: false
+  - ./gradlew assembleRelease
