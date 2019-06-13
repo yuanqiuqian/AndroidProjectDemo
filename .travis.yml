@@ -2,7 +2,7 @@ language: android
 sudo: true
 android:
   components:
-     - tools
+    - tools
     - platform-tools
     - tools
     - build-tools-28.0.3
@@ -10,11 +10,11 @@ android:
     - extra-android-m2repository
     - extra-android-support
   licenses:
-    - 'android-sdk-preview-license-52d11cd2'
+    - 'android-sdk-preview-license-.+'
     - 'android-sdk-license-.+'
     - 'google-gdk-license-.+'
 before_install:
 - yes | sdkmanager "platforms;android-28"
 script:
-  - ./gradlew assembleRelease
+  - ./gradlew clean assembleAndroidTest assembleDebug
   - ./gradlew lint
