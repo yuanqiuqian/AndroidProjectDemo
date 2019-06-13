@@ -11,3 +11,4 @@ android:
     - 'google-gdk-license-.+'
 script:
   - ./gradlew assembleRelease
+  - ./gradlew lint
